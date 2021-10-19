@@ -10,6 +10,8 @@ import DayCard from '../components/daycard.jsx'
 
 library.add(fab)
 
+let current = new Date();
+
 class CityDetails extends React.Component {
 
     componentDidMount() {
@@ -50,6 +52,9 @@ class CityDetails extends React.Component {
                     <div className="col albelta-col">
                         <span className="city-name">{this.props.city}</span>
                         <img src={this.props.icon}alt="..."/>
+                    </div>
+                    <div className="row">
+                        <span className="weather-desc-today">{current.getFullYear()}</span>
                     </div>
                 </div>
                 </div>
