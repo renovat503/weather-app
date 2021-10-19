@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+import React from 'react';
+import './App.css';
+import NavBar from './components/navbar';
+import CityDetails from './components/city-details';
+import Footers from './components/footers';
+
+
+class App extends React.Component {
+
+render(){
+  
+=======
 import React, { Component } from 'react';
 import './App.css';
 import NavBar from './components/navbar';
@@ -76,6 +89,7 @@ class App extends Component {
 
     const icon = `http://openweathermap.org/img/wn/${this.state.icon}@2x.png`;
     const { lat,lon,temperatureF,humidity,wind_speed,description} = this.state;
+>>>>>>> 15270700c9c96107ffe349c656270827774367e6
   return (
     <div className="App">
       <div className="main">
@@ -94,9 +108,15 @@ class App extends Component {
           icon={icon}/>
         </div>
       </div>
+<<<<<<< HEAD
+      <Footers/>
+=======
       <Footer/>
+>>>>>>> 15270700c9c96107ffe349c656270827774367e6
     </div>
   );
+
+  }
 }
 }
 
